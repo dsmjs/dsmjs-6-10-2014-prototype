@@ -22,9 +22,12 @@ Programmer.prototype.favoriteLanguage = function(){
 };
 
 var programmer = new Programmer('Matt', 'JavaScript');
-log('one', programmer.say()); // one
-log('two', programmer.writeCode()); // two
-log('three', programmer.favoriteLanguage()); // three
-log('four', programmer.language); // four
 
-// How do I know what properties `belong` to my object?
+log('prog1', programmer.hasOwnProperty('say')); //prog1
+log('prog2', programmer.hasOwnProperty('favoriteLanguage')); //prog2
+log('prog3', programmer.hasOwnProperty('hasOwnProperty')); //prog3
+log('prog4', programmer.hasOwnProperty('language')); //prog4
+
+// `this` vs `prototype`
+
+// How do I override a parent's behavior?
